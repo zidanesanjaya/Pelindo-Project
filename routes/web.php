@@ -55,3 +55,7 @@ Route::get('/delete/{id}', [App\Http\Controllers\HomeController::class, 'delete'
 
 
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
